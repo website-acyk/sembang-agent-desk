@@ -1,0 +1,17 @@
+{
+  "name": "sembang-agent-desk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI calling desk for property agents: own-voice calls, lead upload, hot lead Gmail alerts.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "setup:elevenlabs": "node scripts/setup-elevenlabs.mjs",
+    "test": "node scripts/selftest.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "@supabase/supabase-js": "^2.45.4",
+    "nodemailer": "^6.9.14"
+  }
+}

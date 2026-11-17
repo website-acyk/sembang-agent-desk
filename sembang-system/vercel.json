@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "api/projects/extract.js": { "maxDuration": 60 },
+    "api/leads/photo.js": { "maxDuration": 60 },
+    "api/voice/clone.js": { "maxDuration": 60 },
+    "api/cron/dispatch.js": { "maxDuration": 60 }
+  },
+  "rewrites": [{ "source": "/", "destination": "/index.html" }]
+}

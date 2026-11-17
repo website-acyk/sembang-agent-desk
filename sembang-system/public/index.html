@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sembang Agent Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<style>:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div class="app" id="app" hidden>
+  <aside class="rail" aria-label="Main">
+    <div class="brand"><div class="brand-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div><span>Sembang</span></div>
+    <nav class="nav" id="nav"></nav>
+    <div class="rail-foot">
+      <div>Calling number<br><b class="mono" id="railNum"></b></div>
+      <div id="railWho"></div>
+      <div class="row"><button class="btn sm" data-act="theme" style="background:transparent;color:var(--rail-fg);border-color:var(--rail-hi)">Light / dark</button><button class="btn sm" data-act="signout" style="background:transparent;color:var(--rail-fg);border-color:var(--rail-hi)">Sign out</button></div>
+    </div>
+  </aside>
+  <main class="main"><div class="wrap" id="view"></div></main>
+</div>
+<main class="main" id="loginWrap" hidden><div class="login panel" id="login"></div></main>
+<div id="layer"></div>
+<div id="toast" class="toast" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script type="module" src="/app.js"></script>
+</body>
+</html>
